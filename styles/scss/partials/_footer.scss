@@ -64,9 +64,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 15px;
     column-gap: 20px;
+    @media screen and (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
   }
   .mini-section {
     position: relative;
+    height: auto;
+    margin-top: 10px;
     &:nth-child(1) {
       p {
         text-align: left;
@@ -76,10 +81,18 @@
       p {
         text-align: center;
       }
+      @media screen and (max-width: 650px) {
+        p {
+          text-align: left;
+        }
+      }
     }
     &:nth-child(3) {
       p {
         text-align: right;
+        @media screen and (max-width: 650px) {
+          display: none;
+        }
       }
     }
     .list {
@@ -90,12 +103,13 @@
     .social-media-links {
       width: 100%;
       height: auto;
-      position: absolute;
+      position: relative;
       bottom: 20px;
       display: flex;
       justify-content: center;
-      @include screen(tablet-wide) {
-        bottom: 5px;
+      margin-top: 25px;
+      @media screen and (max-width: 650px) {
+        justify-content: flex-start;
       }
       .sidebar-icon {
         width: 50px;
@@ -157,6 +171,9 @@
       text-align: right;
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 650px) {
+        display: none;
+      }
       a {
         font-size: 13px;
         color: $red;
