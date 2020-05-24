@@ -1,0 +1,22 @@
+.section-program-today {
+  margin-top: 90px;
+  @include screen(tablet-wide) {
+    margin-top: 70px;
+  }
+}
+
+.section-program-all {
+  .program-description {
+    margin-top: 10px;
+  }
+}
+
+.section-program-today,
+.section-program-all {
+  .cards-wrapper {
+    margin-top: 25px;
+    @include screen(tablet-wide) {
+      margin-top: 15px;
+    }
+  }
+}
