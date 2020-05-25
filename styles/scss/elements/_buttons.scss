@@ -35,3 +35,55 @@ button {
     color: $red;
   }
 }
+.breadcrumb {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .breadcrumb-btn {
+    padding: 10px 30px 10px 45px;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: -5px 2px 30px #ccc;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    margin-left: -35px;
+    transition: 0.2s ease-in-out;
+    i {
+      margin-right: 5px;
+    }
+    &:first-child {
+      z-index: 2;
+      padding-left: 30px;
+      margin-left: 0;
+    }
+    &:last-child {
+      background-color: #0167fb;
+      color: $white;
+      i {
+        color: $white;
+      }
+      &:hover {
+        background-color: $red;
+      }
+    }
+    &:hover {
+      background-color: $red;
+      color: $white;
+      i {
+        color: $white;
+      }
+    }
+  }
+}
+
+.share-btn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  i {
+    font-size: 25px;
+    color: $white;
+  }
+}
