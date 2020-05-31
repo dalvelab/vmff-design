@@ -1,4 +1,4 @@
-const images = document.querySelectorAll(".slider img");
+const images = document.querySelectorAll(".slider-welcome img");
 const prevSlideButton = document.querySelector("#prev");
 const nextSlideButton = document.querySelector("#next");
 const auto = true;

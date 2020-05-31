@@ -37,6 +37,10 @@ main {
   min-height: calc(100vh - 60px);
   background-color: $white;
   position: relative;
+  margin-top: 90px;
+  @include screen(phone) {
+    margin-top: 70px;
+  }
 }
 
 ul {
@@ -69,8 +73,9 @@ section {
   position: relative;
   margin-top: 15px;
   .section-thesis {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
+    line-height: 1.8;
   }
 }
 
