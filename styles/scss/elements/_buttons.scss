@@ -95,6 +95,9 @@ button {
   min-height: 150px;
   margin: 25px auto 0px auto;
   position: relative;
+  @include screen(phone) {
+    width: 100%;
+  }
   .accordion-section-title {
     margin-top: 25px;
     color: #b2b7ba;
@@ -112,6 +115,14 @@ button {
     cursor: pointer;
     transition: 0.4s ease-in-out;
     overflow: hidden;
+    @include screen(phone) {
+      width: calc(100% - 25px);
+      margin-left: 25px;
+    }
+    @include screen(phone-small) {
+      width: calc(100% - 5px);
+      margin-left: 5px;
+    }
     &:after {
       @include pseudo;
       background-color: #f0f2f3;
