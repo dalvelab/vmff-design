@@ -23,4 +23,22 @@
     margin-left: 10px;
     font-size: 20px;
   }
+  .right {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    @include screen(phone) {
+      display: none;
+    }
+    i {
+      margin-right: 10px;
+      font-size: 25px;
+      color: $red;
+    }
+    h6 {
+      margin-top: 3px;
+    }
+  }
 }

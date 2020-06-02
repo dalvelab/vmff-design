@@ -15,6 +15,7 @@ const closeSidebar = () => {
 
 openSidebarBtn.addEventListener("click", openSidebar);
 closeSidebarbtn.addEventListener("click", closeSidebar);
+
 overlay.addEventListener("click", () => {
   sidebar.style.marginLeft = "-300px";
   overlay.style.display = "none";
